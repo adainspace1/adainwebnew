@@ -23,7 +23,6 @@ const CoursesCard = () => {
                     <i className='fa fa-star'></i>
                     <i className='fa fa-star'></i>
                     <i className='fa fa-star'></i>
-                    <i className='fa fa-star'></i>
                     <label htmlFor=''>(5.0)</label>
                   </div>
                   <div className='details'>
