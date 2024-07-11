@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+/* General Styles for Testimonials */
+.testimonal .items {
+  padding: 30px;
+  transition: 0.5s;
+}
+
+.testimonal .img {
+  position: relative;
+  text-align: center;
+}
+
+.testimonal img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.testimonal i {
+  position: absolute;
+  bottom: 0;
+  left: 60px;
+  background-color: #ff7e00;
+  color: #afafaf;
+  border-radius: 50%;
+  padding: 5px;
+}
+.testimonal .container .subtitle{
+  font-family: "Nunito Sans", sans-serif;
+}
+.testimonal .name {
+  margin: 25px;
+  text-align: center;
+}
+
+.testimonal .name h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.testimonal .name span {
+  color: #ff7e00;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+}
+
+.testimonal p {
+  margin-top: 10px;
+  color: grey;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.testimonal .items:hover {
+  background-color: #ff7e00;
+  color: #fff;
+  cursor: pointer;
+}
+
+.testimonal .items:hover span,
+.testimonal .items:hover p {
+  color: #fff;
+}
+
+.testimonal .items:hover i {
+  background-color: #fff;
+  color: #ff7e00;
+}
+
+/* Media Queries */
+
+/* Large screens (desktops, 1025px and up) */
+@media screen and (min-width: 1025px) {
+  .testimonal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+/* Medium screens (tablets, 769px to 1024px) */
+@media screen and (max-width: 1024px) {
+  .testimonal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonal .items {
+    width: 45%;
+    margin: 10px;
+  }
+}
+
+/* Small screens (phones, 481px to 768px) */
+@media screen and (max-width: 768px) {
+  .testimonal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonal .items {
+    width: 80%;
+    margin: 10px 0;
+  }
+  .testimonal img {
+    width: 80px;
+    height: 80px;
+  }
+  .testimonal i{
+    display: none;
+  }
+  .testimonal .name h2 {
+    font-size: 18px;
+  }
+}
+
+/* Extra small screens (phones, 480px and below) */
+@media screen and (max-width: 480px) {
+  .testimonal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonal .items {
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+  }
+  .testimonal img {
+    width: 60px;
+    height: 60px;
+  }
+  .testimonal .name h2 {
+    font-size: 16px;
+  }
+  .testimonal i{
+    display: none;
+  }
+  .testimonal p {
+    font-size: 14px;
+  }
+}

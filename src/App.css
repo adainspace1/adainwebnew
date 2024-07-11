@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Nanum+Gothic&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+/*------------global-----------*/
+.container {
+  max-width: 85%;
+  margin: auto;
+  overflow: hidden;
+}
+.flexSB {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin-right: 90px;
+  
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.007);
+  color: #ffffff;
+  transition: 0.5s;
+}
+.icon:hover {
+  cursor: pointer; 
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+  transition: all 0.3s ease-in-out;
+  
+}
+.row {
+  width: 50%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+button {
+  padding: 15px 20px;
+  background-color: #ffffff00;
+  color: #ff8000;
+  border: 2px solid #ff7e00;
+  font-weight: 600;
+  margin: 20px 10px 0 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+button:hover{
+  transform: scale(1.2);
+}
+button i {
+  margin-left: 20px;
+}
+/*------------global-----------*/
+#heading {
+  text-align: center;
+  padding: 40px 0;
+}
+#heading h3 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ff7e00;
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif
+}
+#heading h1 {
+  font-size: 45px;
+  margin: 20px 0;
+  text-transform: capitalize;
+  font-family: "Nunito", sans-serif
+}
+p {
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.back {
+  background-color: #000;
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 60vh;
+  padding-top: 15%;
+  padding-right: 50px;
+  color: #ff7e00;
+  text-align: center;
+  font-family: "Nunito", sans-serif
+}
+.back h1 {
+  font-size: 60px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif
+}
+.back h2 {
+  font-weight: 500;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.margin {
+  margin-top: 40.3%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+.flex {
+  display: flex;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.outline-btn {
+  margin: 0;
+  box-shadow: none;
+  border: 2px solid #ff7e00;
+  width: 100%;
+  transition: 0.5s;
+}
+.outline-btn:hover {
+  background-color: #ff7e00;
+  color: #fff;
+}
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+.padding {
+  padding: 80px 0;
+}
+.shadow {
+  box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
+  background-color: #fff;
+}
+
+/* Media Queries for responsive design */
+@media screen and (max-width: 1024px) {
+  .grid,
+  .grid2,
+  .grid3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .row {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid,
+  .grid2,
+  .grid3 {
+    grid-template-columns: 1fr;
+  }
+  .head{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+  .back {
+    background-position: center;
+    padding-top: 50%;
+    height: 80vh;
+  }
+  .head .icon {
+    display: none;
+   }
+  button {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .aboutHome .left img{
+    display: none;
+  }
+  button .toggle {
+    display: block;
+    background: none;
+    color: #fff;
+    font-size: 22px;
+    position: absolute;
+    right: -240px;
+    top: -100px;
+    cursor: pointer;
+  }
+  .mobile-nav {
+    position: absolute;
+    top: -15px;
+    left: 190px;
+    width: 50%;
+    background-color: #ff8000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  .flexSB {
+    display: flex;
+  }
+  .legal p {
+    font-size: 15px;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 530px){
+  .head{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+  button .toggle {
+    display: block;
+    background: none;
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    right: -200px;
+    top: 8px;
+    cursor: pointer;
+  }
+  .mobile-nav {
+    position: absolute;
+    top: -15px;
+    left: 190px;
+    width: 50%;
+    background-color: #ff8000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  .flexSB {
+    display: flex;
+  }
+  .legal p {
+    font-size: 15px;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .head{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  #heading h1 {
+    font-size: 30px;
+  }
+ .toggle{
+    display: block;
+    background: none;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    right: -140px;
+    top: -20px;
+    cursor: pointer;
+  }
+  .newletter .right{
+    display: none;
+  }
+  footer .container {
+    align-items: center;
+  }
+  .newletter .left{
+    align-items: right;
+  }
+  footer .logo{
+    align-items: non;
+    margin: 30px;
+  }
+  footer .li{
+    display: none;
+  }
+  .container .last{
+    margin: 15px;
+  }
+  .head .icon {
+    display: none;
+   }
+  .mobile-nav {
+    position: absolute;
+    top: -15px;
+    left: 190px;
+    width: 50%;
+    background-color: #ff8000;
+    display: flex;
+  }
+  .mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  .aboutHome .left img{
+    display: none;
+  }
+  #heading h3 {
+    font-size: 18px;
+  }
+  .flexSB {
+    display: flex;
+  }
+  .flexSB ul li{
+    display: flex;
+  }
+  .back h1 {
+    font-size: 50px;
+  }
+  .back h2 {
+    font-size: 14px;
+  }
+  .padding {
+    padding: 40px 0;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .legal {
+    text-align: center;
+    padding: 50px 0;
+    color: black;
+    background-color: #e9e9e9;
+    text-transform: uppercase;
+    font-weight: 500px;
+  }
+  .legal p {
+    font-size: 15px;
+    margin-left: 10px;
+  }
+}
+

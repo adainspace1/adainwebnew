@@ -1,0 +1,105 @@
+.team .items {
+  transition: 0.5s;
+}
+.team .img {
+  position: relative;
+}
+.team img {
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  z-index: 11;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.overlay i {
+  background-color: #000;
+  color: #fff;
+  margin: 5px;
+  transition: 0.5s;
+}
+.team .details {
+  padding: 30px;
+  text-align: center;
+}
+.team .details h2 {
+  font-weight: 500;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.team .details p {
+  font-size: 15px;
+  color: grey;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+.team .items:hover {
+  background-color: #ff7e00;
+  color: #fff;
+  cursor: pointer;
+}
+.team .items:hover p {
+  color: #fff;
+}
+.team .items:hover .overlay {
+  opacity: 1;
+}
+.team .items:hover .overlay i:hover {
+  background-color: #ff7e00;
+  color: #fff;
+}
+
+/* Media Queries for .team section */
+@media screen and (max-width: 1024px) {
+  .team .details {
+    padding: 20px;
+  }
+  .team .details h2 {
+    font-size: 18px;
+  }
+  .team .details p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team .details {
+    padding: 15px;
+  }
+  .team .details h2 {
+    font-size: 16px;
+  }
+  .team .details p {
+    font-size: 13px;
+  }
+  .overlay {
+    padding: 15px;
+  }
+  .overlay i {
+    margin: 3px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .team .details {
+    padding: 10px;
+  }
+  .team .details h2 {
+    font-size: 14px;
+  }
+  .team .details p {
+    font-size: 12px;
+  }
+  .overlay {
+    padding: 10px;
+  }
+  .overlay i {
+    margin: 2px;
+  }
+}
